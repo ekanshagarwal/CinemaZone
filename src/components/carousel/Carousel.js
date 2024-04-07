@@ -52,7 +52,7 @@ console.log(props);
           <CarouselItems
             ref={carouselContainer}
             data={props.data}
-            mediaType={props.endpoint}
+            mediaType={props.endpoint || props.mediaType}
           />
         ) : (
           <div className="loadingSkeleton">
